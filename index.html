@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Trajet Malin</title>
+<style>
+  :root { --bg:#FAF7F2; --fg:#1D1B18; --muted:#6E6960; --accent:#F77F00; --line:#E9E2D6; --card:#fff; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#15130F; --fg:#F3EEE6; --muted:#B5AEA3; --accent:#FF9A2E; --line:#2E2A24; --card:#1F1C17; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:32px 16px 64px; }
+  h1 { font-size:1.9rem; line-height:1.2; margin:0 0 8px; }
+  h2 { margin-top:2em; padding-top:.6em; border-top:1px solid var(--line); font-size:1.3rem; }
+  h3 { font-size:1.05rem; margin-bottom:.2em; color:var(--accent); }
+  a { color:var(--accent); }
+  code { font-size:.9em; background:var(--card); border:1px solid var(--line); border-radius:4px; padding:0 4px; }
+  .table { overflow-x:auto; }
+  table { border-collapse:collapse; width:100%; background:var(--card); font-size:.92rem; }
+  th, td { border:1px solid var(--line); padding:8px 10px; text-align:left; vertical-align:top; }
+  em { color:var(--muted); }
+</style>
+</head>
+<body><main>
+<h1>Politique de confidentialité — Trajet Malin</h1>
+<p><em>Dernière mise à jour : 21 octobre 2026</em></p>
+<p>Trajet Malin (<code>ci.trajetmalin.app</code>) compare les moyens de transport à Abidjan et les classe du moins cher au plus cher. Cette page explique quelles données l'application utilise, pourquoi, et avec qui elles sont échangées.</p>
+<p><strong>En résumé :</strong> pas de compte, pas de publicité, pas de traceur publicitaire, aucune vente de données. Votre position sert à calculer vos trajets ; elle ne quitte votre téléphone que pour les services nécessaires au calcul, ou quand vous choisissez d'envoyer une contribution.</p>
+<h2>1. Données utilisées</h2>
+<h3>Position (précise et approximative)</h3>
+<ul><li><strong>Quand :</strong> seulement si vous l'autorisez, et seulement quand l'application est ouverte. Trajet Malin n'accède jamais à votre position en arrière-plan.</li><li><strong>Pourquoi :</strong> pré-remplir le point de départ, trouver les arrêts proches, calculer l'itinéraire et vérifier s'il pleut.</li><li><strong>Vous pouvez refuser :</strong> l'application reste utilisable en saisissant l'adresse de départ à la main.</li></ul>
+<h3>Identifiant aléatoire de l'appareil</h3>
+<p>L'application génère un identifiant aléatoire au premier lancement. Il ne contient aucune information personnelle et n'est relié ni à votre nom, ni à votre numéro, ni à l'identifiant publicitaire Android. Il sert uniquement à limiter les abus (au maximum 40 contributions par jour et par appareil) et à éviter qu'un même appareil vote plusieurs fois.</p>
+<h3>Contributions (facultatives)</h3>
+<p>Dans l'onglet « Contribuer », vous pouvez signaler la présence ou l'absence d'un transport, un prix payé, une gare ou un tronçon. Une contribution contient : le type de transport, la position concernée (arrondie à environ 1 m), le prix éventuel, le point d'arrivée éventuel, les noms de lieux et la note courte (200 caractères maximum) que vous saisissez, et l'identifiant aléatoire ci-dessus.</p>
+<p>Les autres utilisateurs ne voient <strong>que des données agrégées</strong> (votes par zone, prix médians, noms de gares proposés). Les contributions brutes et les identifiants d'appareil ne sont jamais publiés. <strong>N'écrivez pas d'informations personnelles dans les notes ni dans les noms de lieux.</strong></p>
+<h3>Données stockées uniquement sur votre téléphone</h3>
+<p>Historique des recherches, favoris (Maison / Travail), réglages (thème, langue), grille tarifaire et météo en cache. Ces données ne sont jamais envoyées. Elles sont effacées si vous désinstallez l'application ou videz ses données.</p>
+<h2>2. Services tiers</h2>
+<p>Pour fonctionner, l'application envoie des coordonnées ou des recherches aux services suivants, uniquement pour fournir la fonctionnalité demandée :</p>
+<div class="table"><table><thead><tr><th>Service</th><th>Ce qui est envoyé</th><th>Pourquoi</th></tr></thead><tbody><tr><td>Supabase (hébergement des contributions)</td><td>Les contributions décrites ci-dessus</td><td>Partager les signalements avec la communauté</td></tr><tr><td>OpenStreetMap (fonds de carte)</td><td>Zone de carte affichée</td><td>Afficher la carte</td></tr><tr><td>Photon / Komoot (recherche d'adresses)</td><td>Texte recherché, position pour une adresse</td><td>Trouver des adresses</td></tr><tr><td>OSRM (calcul d'itinéraire)</td><td>Points de départ et d'arrivée</td><td>Tracer la route en voiture / moto</td></tr><tr><td>Open-Meteo (météo)</td><td>Position arrondie (~100 m)</td><td>Ajuster les prix quand il pleut</td></tr><tr><td>Service de géocodage d'Android (Google)</td><td>Position</td><td>Afficher le nom de la rue de départ</td></tr><tr><td>cdnjs (Cloudflare)</td><td>Requête technique</td><td>Charger la bibliothèque de carte Leaflet</td></tr></tbody></table></div>
+<p>Quand vous touchez un bouton VTC (Yango, Uber, inDrive, Heetch) ou « Partager sur WhatsApp », l'application ouvre l'application concernée avec votre départ et votre destination. Ces applications appliquent leur propre politique de confidentialité.</p>
+<p>Ces données sont transmises de manière chiffrée (HTTPS). Elles ne sont ni vendues, ni utilisées à des fins publicitaires.</p>
+<h2>3. Durée de conservation</h2>
+<ul><li>Données locales : jusqu'à la désinstallation de l'application ou l'effacement de ses données.</li><li>Contributions : conservées tant qu'elles sont utiles à la communauté. Vous pouvez demander leur suppression à tout moment (voir ci-dessous).</li></ul>
+<h2>4. Vos droits</h2>
+<p>Conformément à la loi ivoirienne n° 2013-450 relative à la protection des données à caractère personnel (et au RGPD pour les utilisateurs européens), vous pouvez demander l'accès, la rectification ou la suppression de vos contributions. Écrivez à l'adresse ci-dessous en indiquant la date, le lieu et le type approximatifs de vos contributions pour que nous puissions les retrouver.</p>
+<p>Vous pouvez aussi à tout moment retirer l'autorisation de localisation dans les réglages Android.</p>
+<h2>5. Enfants</h2>
+<p>Trajet Malin ne s'adresse pas aux enfants de moins de 13 ans et ne collecte pas sciemment de données les concernant.</p>
+<h2>6. Modifications</h2>
+<p>En cas de changement, cette page sera mise à jour et la date en haut de page modifiée.</p>
+<h2>7. Contact</h2>
+<p>Pour toute question : <strong><a href="mailto:root225r01@gmail.com">root225r01@gmail.com</a></strong></p>
+</main></body>
+</html>
